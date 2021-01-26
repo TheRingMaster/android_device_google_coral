@@ -1,9 +1,10 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/coral/aosp_flame.mk)
@@ -11,7 +12,7 @@ $(call inherit-product, device/google/coral/aosp_flame.mk)
 -include device/google/coral/device-lineage.mk
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_flame
+PRODUCT_NAME := bliss_flame
 PRODUCT_MODEL := Pixel 4
 PRODUCT_BRAND := google
 
